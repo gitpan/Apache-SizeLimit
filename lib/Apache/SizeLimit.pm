@@ -25,7 +25,7 @@ use vars qw(
     $USE_SMAPS
 );
 
-$VERSION = '0.9';
+$VERSION = '0.91';
 
 __PACKAGE__->set_check_interval(1);
 
@@ -92,7 +92,7 @@ sub add_cleanup_handler {
     # PerlCleanupHandler phase. That means that there's no way to use
     # $r->get_handlers() to check the results of calling this method.
     $r->push_handlers( 'PerlCleanupHandler',
-                       sub { $class->_exit_if_too_big() } );
+                       sub { $class->_exit_if_too_big(shift) } );
     $r->pnotes( size_limit_cleanup => 1 );
 }
 
