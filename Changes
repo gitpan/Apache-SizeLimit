@@ -6,6 +6,16 @@ Changes - Apache::SizeLimit change logfile
 
 =over 6
 
+=item 0.93 2010-10-02
+
+Add PerlModule and PerlLoadModule doc directives.
+[Fred Moyer <fred@redhotpenguin.com>]
+
+Fix overlooked bug where handler expected to be called as a method handler,
+but was documented to be called like a normal Perl cleanup handler ala
+'PerlCleanupHandler Apache2::SizeLimit'
+[Fred Moyer <fred@redhotpenguin.com>]
+
 =item 0.92 2010-09-23
 
 Export USE_SMAPS, VERSION, and REQUEST_COUNT to Apache::SizeLimit
