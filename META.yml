@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Apache2-SizeLimit
-version:            0.94
+version:            0.95
 abstract:           Because size does matter.
 author:  []
 license:            unknown
