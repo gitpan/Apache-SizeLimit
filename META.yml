@@ -1,6 +1,6 @@
 --- #YAML:1.0
-name:               Apache-SizeLimit
-version:            0.93
+name:               Apache2-SizeLimit
+version:            0.94
 abstract:           Because size does matter.
 author:  []
 license:            unknown
@@ -10,7 +10,7 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    mod_perl:  0
+    mod_perl2:  1.99022
 no_index:
     directory:
         - t
