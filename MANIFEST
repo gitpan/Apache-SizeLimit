@@ -19,4 +19,5 @@ t/response/TestApache2/zzz_check_n_requests.pm
 t/response/TestApache2/check_n_requests2.pm
 t/apache/all.t
 t/apache2/all.t
-META.yml                                 Module meta-data (added by MakeMaker)
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)
